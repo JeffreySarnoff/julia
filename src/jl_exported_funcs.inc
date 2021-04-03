@@ -1,12 +1,3 @@
-// `jl_cpuid()` and `jl_cpuidex()` are currently defined only on a few platforms
-#if defined(_CPU_X86_64_) || defined(_CPU_X86_)
-#define ARCH_SPECIFIC_FUNCS(XX) \
-    XX(jl_cpuid) \
-    XX(jl_cpuidex)
-#else
-#define ARCH_SPECIFIC_FUNCS(XX)
-#endif
-
 #define JL_EXPORTED_FUNCS(XX) \
     XX(jl_) \
     XX(jl_abs_float) \
