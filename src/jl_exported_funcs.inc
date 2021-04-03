@@ -755,5 +755,4 @@
     XX(jl_wakeup_thread) \
     XX(jl_xor_int) \
     XX(jl_yield) \
-    XX(jl_zext_int) \
-    ARCH_SPECIFIC_FUNCS(XX) \
+    XX(jl_zext_int)
